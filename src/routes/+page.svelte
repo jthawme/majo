@@ -273,6 +273,8 @@
 		font-size: calc(var(--parts-percentage) * 35vw);
 		line-height: 0;
 
+		padding-bottom: 1em;
+
 		@include tablet {
 			row-gap: 0.15em;
 			font-size: calc(var(--parts-percentage) * 20vw);

@@ -269,7 +269,7 @@
 		column-gap: 0.15em;
 		row-gap: 0.35em;
 
-		font-size: calc(var(--parts-percentage) * 35vw);
+		font-size: calc(var(--parts-percentage) * 32vw);
 		line-height: 0;
 
 		padding-bottom: 1em;
@@ -283,15 +283,17 @@
 	.word {
 		font-size: var(--parts-size);
 
-		transition: {
-			duration: 0.05s;
-			property: font-size;
-		}
-
 		opacity: 0.65;
 		line-height: 0.8;
 
 		text-align: left;
+
+		@include tablet {
+			transition: {
+				duration: 0.05s;
+				property: font-size;
+			}
+		}
 
 		&.active {
 			opacity: 1;
@@ -330,6 +332,10 @@
 		transform: translate3d(-50%, -50%, 0);
 
 		mix-blend-mode: multiply;
+
+		@media (pointer: coarse) {
+			display: none;
+		}
 
 		img {
 			width: 100%;

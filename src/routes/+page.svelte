@@ -73,7 +73,7 @@
 		p: {
 			type: 'text',
 			content: 'P.',
-			trigger: ['plenge', 'pe']
+			trigger: ['plenge', 'pe', 'artist']
 		},
 
 		fernandez: {
@@ -95,7 +95,12 @@
 		li: {
 			type: 'text',
 			content: 'Li,',
-			trigger: ['lima']
+			trigger: ['from', 'lima']
+		},
+
+		from: {
+			type: 'text',
+			content: 'from'
 		},
 
 		lima: {
@@ -106,7 +111,17 @@
 		plus: {
 			type: 'text',
 			content: '+',
-			trigger: ['and', 'mad', 'es']
+			trigger: ['lives', 'in', 'mad', 'es']
+		},
+
+		lives: {
+			type: 'text',
+			content: 'lives'
+		},
+
+		in: {
+			type: 'text',
+			content: 'in'
 		},
 
 		and: {
@@ -129,7 +144,7 @@
 		es: {
 			type: 'text',
 			content: 'Es',
-			trigger: ['spain', 'artist']
+			trigger: ['spain']
 		},
 
 		spain: {

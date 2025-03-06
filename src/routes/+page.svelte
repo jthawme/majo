@@ -225,7 +225,7 @@
 			words.splice(words.indexOf(id), 1, ...trigger);
 
 			if (!dontScale) {
-				level += trigger.length;
+				level += Math.ceil(trigger.length / 2);
 			}
 		} else {
 			const image = randomFrom(imageTypes.filter((item) => !words.includes(item.id)));

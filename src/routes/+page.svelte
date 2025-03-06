@@ -222,8 +222,7 @@
 	}
 
 	/** @type {keyof typeof parts | null} */
-	// let highlightedId = $state(null);
-	let highlightedId = $state('bleu1.jpg');
+	let highlightedId = $state(null);
 	let highlightedImage = $derived(highlightedId ? parts[highlightedId] : null);
 
 	/**

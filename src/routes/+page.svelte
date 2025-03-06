@@ -307,12 +307,57 @@
 	}
 
 	.image {
+		position: relative;
+
 		display: inline-block;
 
 		height: 1.3ch;
 		line-height: 0;
 
+		&:before {
+			content: '';
+
+			position: absolute;
+
+			inset: 1px;
+
+			border: 1px solid blue;
+		}
+
+		&:after {
+			content: 'IMG';
+
+			position: absolute;
+
+			top: 50%;
+			left: 50%;
+
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+
+			overflow: hidden;
+
+			align-items: center;
+			justify-content: center;
+
+			text-align: center;
+
+			transform: translate3d(-50%, -50%, 0);
+
+			color: white;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: blue;
+
+			font-size: 0.3em;
+		}
+
 		img {
+			position: relative;
+
+			z-index: 2;
+
 			width: auto;
 			height: 100%;
 		}

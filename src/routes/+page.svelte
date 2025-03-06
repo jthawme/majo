@@ -288,6 +288,8 @@
 
 		text-align: left;
 
+		touch-action: manipulation;
+
 		@include tablet {
 			transition: {
 				duration: 0.05s;
